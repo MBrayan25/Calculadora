@@ -1,0 +1,15 @@
+html {
+  background: linear-gradient( 135deg, #0099CC 20%, #003366 80%);
+}
+
+.css-base {
+  background: linear-gradient( 15deg, #00CCCC 10%, #0099CC 50%);
+  border: solid 2px #00DCDC;
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -150px;
+}
