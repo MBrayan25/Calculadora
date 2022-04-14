@@ -5,15 +5,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="css-base">
-    <div><div>
+  <div id="corpo" class="css-base">
+    <input id="visor" class="css-base">
+
+    <div id="teclado" class="css-base">
+      <button id="apagar" class="css-base" onclick="apagar()">C</button>
+      <button id="enter" class="css-base" onclick="calcular()">Ok</button>
+      <button class="button0"></button>
+      <button class="button0"></button>
+      <button class="css-base" onclick="botao(outerText)">1</button>
+      <button class="css-base" onclick="botao(outerText)">2</button>
+      <button class="css-base" onclick="botao(outerText)">3</button>
+      <button class="css-base" onclick="botao(outerText)">-</button>
+      <button class="css-base" onclick="botao(outerText)">4</button>
+      <button class="css-base" onclick="botao(outerText)">5</button>
+      <button class="css-base" onclick="botao(outerText)">6</button>
+      <button class="css-base" onclick="botao(outerText)">*</button>
+      <button class="css-base" onclick="botao(outerText)">7</button>
+      <button class="css-base" onclick="botao(outerText)">8</button>
+      <button class="css-base" onclick="botao(outerText)">9</button>
+      <button class="css-base" onclick="botao(outerText)">+</button>
+      <button class="button0"></button>
+      <button id="zero" class="css-base" onclick="botao(outerText)">0</button>
+      <button class="button0"></button>
+      <button class="css-base" onclick="botao(outerText)">/</button>
+    </div>
   </div>
   
-  <script src="script.js"></script>
+  <script src="javaScript.js"></script>
+
 </body>
 
 </html>
