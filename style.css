@@ -6,35 +6,40 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 250px;
+  width: 280px;
   height: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -230px 0 0 -170px;
+  margin: -230px 0 0 -160px;
   padding: 30px 20px;
 }
 
 #visor {
+  font-size: 20px;
   background: #00DCDC;
   margin: 25px 0 25px 0;
-  padding: 0px 50px;
+  padding: 0px 50px 0px 10px;
   text-align: end;
   height: 12%;
 }
 
 #apagar{
-  width: 305%;
+  width: 200%;
 }
 
-#enter {
+#divisao {
   width: 80%;
   margin-left: 210%;
 }
 
 #zero {
   margin-left: -100%;
-  width: 305%;
+  width: 200%;
+}
+
+button{
+  font-size: 18px;
 }
 
 #teclado {
