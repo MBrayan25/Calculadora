@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient( 60deg, #0099CC 20%, #003366 80%);
+  background: linear-gradient( 60deg, #0099CC 20%, #0052a5 80%);
 }
 
 #corpo{
@@ -38,11 +38,6 @@ html {
   width: 200%;
 }
 
-button{
-  background: linear-gradient( 15deg, #028bb9 10%, #0969a0 50%);
-  font-size: 18px;
-}
-
 #teclado {
   background: linear-gradient( 270deg, #17437c 40%, #09c1ff 130%);
   display: grid;
@@ -59,11 +54,25 @@ button{
 }
 
 .css-base {
+  background: linear-gradient( 60deg, #008fbe 20%, #013f7e 80%);
   border: solid 3px #00DCDC;
   border-radius: 20px;
 }
 
 .css-button {
+  background: linear-gradient( 15deg, #028bb9 10%, #0969a0 50%);
   border: solid 3px #00DCDC;
   border-radius: 20px;
+  font-size: 17px;
+}
+
+.css-button :hover {
+  background: linear-gradient( 15deg, #009ace 10%, #1457a3 50%);
+  border-radius: 20px;
+  border: solid 3px #00DCDC;
+}
+
+.css-button :active {
+  box-shadow: 0 3px rgb(36, 35, 68);
+  transform: translateY(2px);
 }
