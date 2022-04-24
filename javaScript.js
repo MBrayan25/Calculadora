@@ -1,28 +1,29 @@
 let ponto = false
 
+function limpar(){ document.getElementById('visor').value = '0' }
+
 document.addEventListener('keydown',teclaPressionada)
 
 function teclaPressionada(event){
     if(event.key == 'Backspace') apagar()
     if(event.key == 'Enter') calcular()
-    if(event.key >= 0) botao(event.key)
+    if(!isNaN(parseInt(event.key))) botao(event.key)
     if(['+','-','*','/','.'].includes(event.key)) simbolo(event.key)
 }
 
 function botao(caracter){
-    text = document.getElementById('visor').value
+    let text = document.getElementById('visor').value
 
     if(text == '0'){
         if(caracter == '0') return
         document.getElementById('visor').value = ''
     } 
 
-    if(text.split(' ').join('').length >= 12) return
+    let tamanhoDoCalculo = text.split(' ').join('').length
+    if(tamanhoDoCalculo >= 12) return
 
     document.getElementById('visor').value += caracter
 }
-
-function limpar(){ document.getElementById('visor').value = '0' }
 
 function apagar(){
     let text = document.getElementById('visor').value
@@ -61,17 +62,11 @@ function simbolo(simbolo){
 function calcular(){
     let text = document.getElementById('visor').value
 
-    if(['+','-','*','/','.'].includes(text[text.length-2])){
-        console.log('Não é possivel calcular!!!!')
-        return
-    }
+    if(['+','-','*','/','.'].includes(text[text.length-2])) return
 
     let resultado = eval(document.getElementById('visor').value)
 
-    if(resultado < 0){
-        resultado*=-1
-        resultado = '- ' + resultado
-    }
+    if(resultado < 0) resultado = '- ' + resultado*-1
 
     document.getElementById('visor').value = resultado
 }
